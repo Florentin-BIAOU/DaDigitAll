@@ -34,18 +34,97 @@
     <link rel="stylesheet" href="{% static 'assets/css/lib/swiper.min.css' %}" />
     <!-- ====== global style ====== -->
     <link rel="stylesheet" href="{% static 'assets/css/style.css' %}" />
-    <link rel="stylesheet" href="{% static 'assets2/css/main.css' %}" />
+    <!-- <link rel="stylesheet" href="{% static 'assets2/css/main.css' %}" /> -->
 </head>
 
 <body>
 
     <!-- <div id="preloader">
     </div>-->
-
+    
     <nav class="navbar navbar-expand-lg navbar-light style-1">
         <div class="container">
             <a class="navbar-brand" href="#" data-scroll-nav="0">
-               <!-- <img src="{% static 'assets/img/logo_home6.png' %}" alt="">   --> 
+                <img src="{%  static 'assets/img/DADIGITALL_logo.png' %}" alt="" height="100px" >
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active"  data-scroll-nav="0">
+                            Accueil
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active"  data-scroll-nav="1">
+                            A Propos
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link"  data-scroll-nav="2">
+                            Nos Services
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  data-scroll-nav="3">
+                            Pourquoi nous
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  data-scroll-nav="4">
+                            Portfolio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  data-scroll-nav="5">
+                            Notre Equipe
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  data-scroll-nav="6">
+                            Blog
+                        </a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link"  data-scroll-nav="6">
+                            Contacts
+                        </a>
+                    </li> -->
+                    <li>
+                        
+                    </li>
+                    
+                </ul>
+                <div class="nav-side">
+                    <div class="hotline pe-4">
+                        <!-- <div class="icon me-3">
+                            <i class="bi bi-telephone"></i>
+                        </div> -->
+                        <!-- <div class="cont">
+                            <small class="text-muted m-0">hotline 24/7</small>
+                            <h6>(+23) 5535 68 68</h6>
+                        </div> -->
+                        
+                    </div>
+                    <div class="qoute-nav ps-4">
+                        <a href="#0" class="btn sm-butn butn-gard border-0 text-white" data-scroll-nav="7">
+                            <span>Contactez Nous</span>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+
+<!-- <nav class="navbar navbar-expand-lg navbar-light style-1" style="padding-left:200px">
+        <div class="container">
+            <a class="navbar-brand" href="#" data-scroll-nav="0">
+               <img src="{% static 'assets/img/logo_home6.png' %}" alt="">    
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -84,16 +163,24 @@
                             Blog
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link"  data-scroll-nav="7">
-                            Contact
-                        </a>
+
+                    <li>
+                        <div class="nav-side">
+                           
+                            <div class="qoute-nav ps-4">
+                                <a href="#0" class="btn sm-butn butn-gard border-0 text-white" data-scroll-nav="7">
+                                    <span>Contact</span>
+                                </a>
+                            </div>
+                        </div>
+                        
                     </li>
                 </ul>
                 </div>
             </div>
         </div>
-    </nav>
+
+    </nav> -->
     <!-- ====== end navbar ====== -->
 
 
@@ -146,147 +233,227 @@
 
     <!-- ====== start about ====== -->
     
-    <!-- About Section - Home Page -->
-    <section id="about" class="about" data-scroll-index="2">
+    
 
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row align-items-xl-center gy-5">
-  
-            <div class="col-xl-5 content">
-              <h3> A propos</h3>
-              <h2>Ducimus rerum libero reprehenderit cumque</h2>
-              <p>Ipsa sint sit. Quis ducimus tempore dolores impedit et dolor cumque alias maxime. Enim reiciendis minus et rerum hic non. Dicta quas cum quia maiores iure. Quidem nulla qui assumenda incidunt voluptatem tempora deleniti soluta.</p>
-              <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+<!-- ====== start about ====== -->
+<section class="about style-1"  data-scroll-index="1" >
+    <div class="container">
+        <div class="content">
+            <div class="about-logos d-flex align-items-center justify-content-between border-bottom border-1 brd-light pb-20">
+                <a href="#"  data-wow-delay="0">
+                    <!-- <img src="{% static 'assets/img/about/about_logos/1.png' %}" alt=""> -->
+                    <h3 style="color: white;">Qui Sommes-Nous?</h3>
+                </a>
+                <a href="#"  data-wow-delay="0.2s">
+                    <!-- <img src="{% static 'assets/img/about/about_logos/2.png' %}" alt=""> -->
+                    <h3 style="color: white;">Notre Vision</h3>
+                </a>
+                <a href="#"  data-wow-delay="0.4s">
+                    <!-- <img src="{% static 'assets/img/about/about_logos/2.png' %}" alt=""> -->
+                    <h3 style="color: white;">Notre Mission</h3>
+                </a>
+                <!-- <a href="#" class="logo wow fadeInUp" data-wow-delay="0.4s">
+                    <img src="{% static 'assets/img/about/about_logos/3.png' %}" alt="">
+                </a>
+                <a href="#" class="logo wow fadeInUp" data-wow-delay="0.6s">
+                    <img src="{% static 'assets/img/about/about_logos/4.png' %}" alt="">
+                </a>
+                <a href="#" class="logo wow fadeInUp" data-wow-delay="0.8s">
+                    <img src="{% static 'assets/img/about/about_logos/5.png' %}" alt=""> -->
+                </a>
             </div>
-  
-            <div class="col-xl-7">
-              <div class="row gy-4 icon-boxes">
-  
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                  <div class="icon-box">
-                    <i class="bi bi-buildings"></i>
-                    <h3>Eius provident</h3>
-                    <p>Magni repellendus vel ullam hic officia accusantium ipsa dolor omnis dolor voluptatem</p>
-                  </div>
-                </div> <!-- End Icon Box -->
-  
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                  <div class="icon-box">
-                    <i class="bi bi-clipboard-pulse"></i>
-                    <h3>Rerum aperiam</h3>
-                    <p>Autem saepe animi et aut aspernatur culpa facere. Rerum saepe rerum voluptates quia</p>
-                  </div>
-                </div> <!-- End Icon Box -->
-  
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-                  <div class="icon-box">
-                    <i class="bi bi-command"></i>
-                    <h3>Veniam omnis</h3>
-                    <p>Omnis perferendis molestias culpa sed. Recusandae quas possimus. Quod consequatur corrupti</p>
-                  </div>
-                </div> <!-- End Icon Box -->
-  
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
-                  <div class="icon-box">
-                    <i class="bi bi-graph-up-arrow"></i>
-                    <h3>Delares sapiente</h3>
-                    <p>Sint et dolor voluptas minus possimus nostrum. Reiciendis commodi eligendi omnis quideme lorenda</p>
-                  </div>
-                </div> <!-- End Icon Box -->
-  
-              </div>
+            <div class="about-info">
+                <div class="row justify-content-between">
+                    <div class="col-lg-5">
+                        <div class="title">
+                            <h3 class=" wow fadeInUp slow">Nous somme spécialisé dans la transformation digitale ainsi que les technologies de l'information et de la communication.</h3>
+                            <!-- <small class=" wow fadeInUp slow fw-bold">Patricia Cross</small> -->
+                            <a href="page-about-5.html" class="btn btn-outline-light mt-5 sm-butn wow fadeInUp slow">
+                                <span>En savoir plus</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="info">
+                            <!-- <h6 class=" wow fadeInUp slow">Notre vision est d'être une référence en matière de transformation digitale et de conseils pour les entreprises du Bénin et de la sous-région.</h6> -->
+                            <p class=" wow fadeInUp slow">Notre vision est d'être une référence en matière de transformation digitale et de conseils pour les entreprises du Bénin et de la sous-région.</p>    
+                            <!-- <a href="page-about-5.html" class="btn btn-outline-light mt-5 sm-butn wow fadeInUp slow">
+                                <span>more about us</span>
+                            </a> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="info">
+                            <!-- <h6 class=" wow fadeInUp slow">We can help to maintain and modernize your IT infrastructure  & solve various infrastructure-specific issues a business may face.</h6> -->
+                            <p class=" wow fadeInUp slow">Notre mission est de conseiller et d'accompagner les entreprises, 
+                                petites, moyennes ou grandes, quel que soit le secteur d'activités, en leur fornissant des solutions matérielles, 
+                                logicielles, organisationnelles sur mesure, afin d'améliorer leurs performances et les conduire à l'efficience.
+                            </p>    
+                            <!-- <a href="page-about-5.html" class="btn btn-outline-light mt-5 sm-butn wow fadeInUp slow">
+                                <span>more about us</span>
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
             </div>
-  
-          </div>
+            <div class="about-numbers">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="num-item wow fadeInUp" data-wow-delay="0">
+                            <div class="num">
+                                <span class="counter">
+                                    2
+                                </span>
+                                <span>
+                                    <i class="fas fa-plus"></i>
+                                </span>
+                            </div>
+                            <div class="inf">
+                                Années d'expérience
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="num-item wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="num">
+                                <span class="counter">
+                                    3
+                                </span>
+                                <span>
+                                    K
+                                </span>
+                            </div>
+                            <div class="inf">
+                                Projets Réalisés
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="num-item wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="num">
+                                <span class="counter">
+                                    2
+                                </span>
+                            </div>
+                            <div class="inf">
+                                Prix Reçus
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="num-item wow fadeInUp" data-wow-delay="0.6s">
+                            <div class="num">
+                                <span class="counter">
+                                    10
+                                </span>
+                            </div>
+                            <div class="inf">
+                                Clients Satisfaits
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="{% static 'assets/img/about/num_shap.png' %}" alt="" class="about_shap">
         </div>
-  
-      </section><!-- End About Section -->
-    <!-- ====== end about ====== -->
+    </div>
+</section>
+<!-- ====== end about ====== -->
+
 
 
     <!-- ====== start services ====== -->
-    <section class="services section-padding style-1"  data-scroll-index="3">
+    <section class="services section-padding style-1"  data-scroll-index="2">
         <div class="container">
             <div class="row">
                 <div class="col offset-lg-1">
                     <div class="section-head mb-60">
-                        <h6 class="color-main text-uppercase wow fadeInUp">our services</h6>
-                        <h2 class="wow fadeInUp">
+                        <h6 class="color-main text-uppercase wow fadeInUp">Nos Services</h6>
+                        <!-- <h2 class="wow fadeInUp">
                             Perfect IT Solutions <span class="fw-normal">For Your Business</span>
-                        </h2>
+                        </h2> -->
                     </div>
                 </div>
             </div>
             <div class="content">
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-6">
                         <div class="service-box mb-4 wow fadeInUp" data-wow-delay="0">
                             <h5>
-                                <a href="page-services-5.html"> IT Consultation </a> 
+                                <a href="page-services-5.html"> Transformation Digitale  </a> 
                                 <span class="num">01</span>
+                            </h5>
+                            <div class="icon">
+                                <img src="{% static 'assets/img/icons/serv_icons/13.png' %}" alt="">
+                            </div>
+                            <div class="info">
+                                <div class="text">
+                                    En partant de l'analyse des processus métiers, à la conception de solutions numériques, nous vous aidons
+                                    à identifier les niveaux d'amélioration de tous les processus métiers grâce à des outils appropriés pour
+                                    vous fournir des solutions sur mesure reliant célérité, sécurité, précision, optimisation des ressources et efficience.
+                                </div>
+                                <div class="tags">
+                                    <a href="#">Site Web</a>
+                                    <a href="#">Application Mobile</a>
+                                    <a href="#">Logiciel</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="service-box mb-4 wow fadeInUp" data-wow-delay="0.2s">
+                            <h5>
+                                <a href="page-services-5.html"> Vente de matériel Informatique et de Réseau </a> 
+                                <span class="num">02</span>
+                            </h5>
+                            <div class="icon">
+                                <img src="{% static 'assets/img/icons/serv_icons/7.png' %}" alt="">
+                            </div>
+                            <div class="info">
+                                <div class="text">
+                                    Nous vous offrons des gammes complètes de matériels informatiques (ordinateur, serveurs, logiciels, etc.)
+                                    et de réseau (switch, routeur, firewalls, etc.) grâce à notre large réseau de partenaire.
+                                    Nous constituons un guichet unique pour tous vos besoins en matériels, en vous simplifiant le processus d'achat
+                                    pour l'acquisition à des coûts compétitifs.
+                                </div>
+                                <div class="tags">
+                                    <a href="#">Management</a>
+                                    <a href="#">Installation</a>
+                                    <a href="#">Configuration</a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="service-box mb-4 wow fadeInUp" data-wow-delay="0.4s">
+                            <h5>
+                                <a href="page-services-5.html"> Audit, Conseil et Accompagnement </a> 
+                                <span class="num">03</span>
                             </h5>
                             <div class="icon">
                                 <img src="{% static 'assets/img/icons/serv_icons/1.png' %}" alt="">
                             </div>
                             <div class="info">
                                 <div class="text">
-                                    Trust our top minds to eliminate workflow pain points, implement new tech & app.
+                                    Nous vous aidons à évaluer vos infrastructure et solutions informatiques, pour identifier les vulnérabilités et 
+                                    les risques de sécurités et proposons des solutions pour mitiger voire supprimer ceux-ci. De plus nous vous accompagnons 
+                                    dans la mise en oeuvre de ces solutions en veillant à ce que les projets soient livrés à temps dans le respect des budgets
+                                    et spécifications. Enfin nous offrons de la formation et du transfert de compétence à divers niveaux.
                                 </div>
                                 <div class="tags">
-                                    <a href="#">Strategy</a>
-                                    <a href="#">Consultation</a>
-                                    <a href="#">Management</a>
+                                    <a href="#">Stratégie</a>
+                                    <a href="#">Conseil</a>
+                                    <a href="#">Formation</a>
+                                    <a href="#">Compétence</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="service-box mb-4 wow fadeInUp" data-wow-delay="0.2s">
-                            <h5>
-                                <a href="page-services-5.html"> Data Security </a> 
-                                <span class="num">02</span>
-                            </h5>
-                            <div class="icon">
-                                <img src="{% static 'assets/img/icons/serv_icons/2.png' %}" alt="">
-                            </div>
-                            <div class="info">
-                                <div class="text">
-                                    Trust our top minds to eliminate workflow pain points, implement new tech & app.
-                                </div>
-                                <div class="tags">
-                                    <a href="#">Management</a>
-                                    <a href="#">Backup & Recovery</a>
-                                    <a href="#">Transfer</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="service-box mb-4 wow fadeInUp" data-wow-delay="0.4s">
-                            <h5>
-                                <a href="page-services-5.html"> Website Development </a> 
-                                <span class="num">03</span>
-                            </h5>
-                            <div class="icon">
-                                <img src="{% static 'assets/img/icons/serv_icons/3.png' %}" alt="">
-                            </div>
-                            <div class="info">
-                                <div class="text">
-                                    Trust our top minds to eliminate workflow pain points, implement new tech & app.
-                                </div>
-                                <div class="tags">
-                                    <a href="#">Ecommerce</a>
-                                    <a href="#">Landing Page</a>
-                                    <a href="#">CMS</a>
-                                    <a href="#">Plugin</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-6">
                         <div class="service-box mb-4 mb-md-0 wow fadeInUp" data-wow-delay="0">
                             <h5>
-                                <a href="page-services-5.html"> UI/UX Design </a> 
+                                <a href="page-services-5.html"> Assistance à Maitrise d'ouvrage </a> 
                                 <span class="num">04</span>
                             </h5>
                             <div class="icon">
@@ -294,80 +461,38 @@
                             </div>
                             <div class="info">
                                 <div class="text">
-                                    Trust our top minds to eliminate workflow pain points, implement new tech & app.
+                                    Grâce à notre expertise et expérience, nous accompagnons nos clients dans la mise en oeuvre de projets 
+                                    divers par l'identification et formulation des besoins, la définition des objectifs, le choix du meilleur prestataire et le suivi du 
+                                    projet jusqu'au go live.
+                                    Nous agissons comme un partenaire stratégique, travaillant en étroite collaboration avec les équipes internes de nos 
+                                    clients. Nous jouons un rôle clé dans la gestion du projet en veillant à ce que les ressources, les délais et les coûts soient maîtrisés.
+                                    <p> </p>
+                                    <p> </p>
                                 </div>
                                 <div class="tags">
-                                    <a href="#">Website</a>
-                                    <a href="#">Mobile App</a>
+                                    <a href="#">Projet</a>
+                                    <a href="#">Assistance</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="service-box mb-4 mb-md-0 wow fadeInUp" data-wow-delay="0.2s">
-                            <h5>
-                                <a href="page-services-5.html"> Cloud Services </a> 
-                                <span class="num">05</span>
-                            </h5>
-                            <div class="icon">
-                                <img src="{% static 'assets/img/icons/serv_icons/5.png' %}" alt="">
-                            </div>
-                            <div class="info">
-                                <div class="text">
-                                    Trust our top minds to eliminate workflow pain points, implement new tech & app.
-                                </div>
-                                <div class="tags">
-                                    <a href="#">Cloud Storerage</a>
-                                    <a href="#">Hosting & VPS</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="service-box wow fadeInUp" data-wow-delay="0.4s">
-                            <h5>
-                                <a href="page-services-5.html"> Game Development </a> 
-                                <span class="num">06</span>
-                            </h5>
-                            <div class="icon">
-                                <img src="{% static 'assets/img/icons/serv_icons/6.png' %}" alt="">
-                            </div>
-                            <div class="info">
-                                <div class="text">
-                                    Trust our top minds to eliminate workflow pain points, implement new tech & app.
-                                </div>
-                                <div class="tags">
-                                    <a href="#">Unity 2D/3D</a>
-                                    <a href="#">VR/AR</a>
-                                    <a href="#">iOS & Android</a>
-                                    <a href="#">HTC Vive</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="{% static 'assets/img/services/ser_shap_l.png' %}" alt="" class="ser_shap_l">
-        <img src="{% static 'assets/img/services/ser_shap_r.png' %}" alt="" class="ser_shap_r">
-    </section>
     <!-- ====== end services ====== -->
 
 
     <!-- ====== start choose-us====== -->
-    <section class="choose-us section-padding pt-0 style-1"  >
+    <section class="choose-us section-padding pt-0 style-1"  data-scroll-index="3">
         <div class="container">
             <div class="row justify-content-end">
                 <div class="col-lg-5">
                     <div class="info">
                         <div class="section-head mb-60">
-                            <h6 class="color-main text-uppercase wow fadeInUp">Why choose us</h6>
+                            <h6 class="color-main text-uppercase wow fadeInUp">Pourquoi DADIGITALL ?</h6>
                             <h2 class="wow fadeInUp">
-                                Boost Your Business <span class="fw-normal">With New Tech</span>
+                                Faites évoluer votre entreprise <span class="fw-normal">avec des technologies récentes</span>
                             </h2>
                         </div>
                         <div class="text">
-                            Our team can assist you in transforming your business through latest tech capabilities to stay ahead of the curve.
+                            Notre équipe peut vous aider à transformer votre entreprise en exploitant les dernières capacités technologiques pour rester en avance sur la courbe.
                         </div>
                         <ul>
                             <li class="wow fadeInUp">
@@ -404,8 +529,8 @@
                             </li>
                         </ul>
 
-                        <a href="page-about-5.html" class="btn butn-gard border-0 text-white wow fadeInUp">
-                            <span>How We Works</span>
+                        <a href="#" class="btn butn-gard border-0 text-white wow fadeInUp">
+                            <span>En savoir plus sur nous</span>
                         </a>
                     </div>
                 </div>
@@ -417,9 +542,9 @@
     </section>
     <!-- ====== end choose-us====== -->
 
-
+    
     <!-- ====== start portfolio ====== -->
-    <section class="portfolio section-padding bg-gray style-1"  data-scroll-index="4">
+    <section id="porfolio" class="portfolio section-padding bg-gray style-1"  data-scroll-index="4">
         <div class="container">
             <div class="row">
                 <div class="col offset-lg-1">
@@ -501,7 +626,7 @@
                             <div class="swiper-slide">
                                 <div class="portfolio-card">
                                     <div class="img">
-                                        <img src="{% static 'assets/img/projects/prog/2.png' %}" alt="">
+                                        <img src="{%  static 'assets/img/projects/prog/2.png' %}" alt="">
                                     </div>
                                     <div class="info">
                                         <h5>
@@ -536,141 +661,135 @@
         <img src="{% static 'assets/img/projects/prog/shap_l.png' %}" alt="" class="shap_l">
     </section>
     <!-- ====== end portfolio ====== -->
+    <!-- ====== end portfolio ====== -->
 
 
-
-
-
-
-
-
-
-  <!-- Team Section - Home Page -->
-  <section id="team" class="team" data-scroll-index="5">
-
-    <!--  Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-      <h2>Team</h2>
-      <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-    </div><!-- End Section Title -->
-
+<!-- ====== start team ====== -->
+<section class="team section-padding pt-0 style-1" data-scroll-index="5">
     <div class="container">
-
-      <div class="row gy-5">
-
-        <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
-          <div class="member-img">
-            <img src="{% static 'assets2/img/team/team-1.jpg' %}" class="img-fluid" alt="">
-            <div class="social">
-              <a href="#"><i class="bi bi-twitter"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
+        <div class="section-head mb-60 text-center">
+            <h6 class="color-main text-uppercase wow fadeInUp">meet our expert</h6>
+            <h2 class="wow fadeInUp">
+                Clients Satisfaction, <span class="fw-normal">Our Reputation</span>
+            </h2>
+        </div>
+        <div class="content">
+            <div class="team_box wow fadeInUp" data-wow-delay="0">
+                <div class="avatar">
+                    <img src="{% static 'assets/img/team/1.jpeg' %}" alt="">
+                </div>
+                <div class="info">
+                    <h6><a href="#">Michael Edwards</a></h6>
+                    <small>CEO Founder</small>
+                    <div class="social_icons">
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="member-info text-center">
-            <h4>Walter White</h4>
-            <span>Chief Executive Officer</span>
-            <p>Aliquam iure quaerat voluptatem praesentium possimus unde laudantium vel dolorum distinctio dire flow</p>
-          </div>
-        </div><!-- End Team Member -->
-
-        <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
-          <div class="member-img">
-            <img src="{% static 'assets2/img/team/team-2.jpg' %}" class="img-fluid" alt="">
-            <div class="social">
-              <a href="#"><i class="bi bi-twitter"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
+            <div class="team_box wow fadeInUp" data-wow-delay="0.2s">
+                <div class="avatar">
+                    <img src="{% static 'assets/img/team/2.jpeg' %}" alt="">
+                </div>
+                <div class="info">
+                    <h6><a href="#">Bobby Kane</a></h6>
+                    <small>CTO</small>
+                    <div class="social_icons">
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="member-info text-center">
-            <h4>Sarah Jhonson</h4>
-            <span>Product Manager</span>
-            <p>Labore ipsam sit consequatur exercitationem rerum laboriosam laudantium aut quod dolores exercitationem ut</p>
-          </div>
-        </div><!-- End Team Member -->
-
-        <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
-          <div class="member-img">
-            <img src="{% static 'assets2/img/team/team-3.jpg' %}" class="img-fluid" alt="">
-            <div class="social">
-              <a href="#"><i class="bi bi-twitter"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
+            <div class="team_box wow fadeInUp" data-wow-delay="0.4s">
+                <div class="avatar">
+                    <img src="{% static 'assets/img/team/3.jpeg' %}" alt="">
+                </div>
+                <div class="info">
+                    <h6><a href="#">Robert Downey Jr</a></h6>
+                    <small>Project Manager</small>
+                    <div class="social_icons">
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="member-info text-center">
-            <h4>William Anderson</h4>
-            <span>CTO</span>
-            <p>Illum minima ea autem doloremque ipsum quidem quas aspernatur modi ut praesentium vel tque sed facilis at qui</p>
-          </div>
-        </div><!-- End Team Member -->
-
-        <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
-          <div class="member-img">
-            <img src="{% static 'assets2/img/team/team-4.jpg' %}" class="img-fluid" alt="">
-            <div class="social">
-              <a href="#"><i class="bi bi-twitter"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
+            <div class="team_box wow fadeInUp" data-wow-delay="0.6s">
+                <div class="avatar">
+                    <img src="{% static 'assets/img/team/4.jpeg' %}" alt="">
+                </div>
+                <div class="info">
+                    <h6><a href="#">Andrew Robertson</a></h6>
+                    <small>Marketing Leader</small>
+                    <div class="social_icons">
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="member-info text-center">
-            <h4>Amanda Jepson</h4>
-            <span>Accountant</span>
-            <p>Magni voluptatem accusamus assumenda cum nisi aut qui dolorem voluptate sed et veniam quasi quam consectetur</p>
-          </div>
-        </div><!-- End Team Member -->
-
-        <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="500">
-          <div class="member-img">
-            <img src="{% static 'assets2/img/team/team-5.jpg' %}" class="img-fluid" alt="">
-            <div class="social">
-              <a href="#"><i class="bi bi-twitter"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
+            <div class="team_box wow fadeInUp" data-wow-delay="0.8s">
+                <div class="avatar">
+                    <img src="{% static 'assets/img/team/5.jpeg' %}" alt="">
+                </div>
+                <div class="info">
+                    <h6><a href="#">Alexander Avery</a></h6>
+                    <small>Creative Director</small>
+                    <div class="social_icons">
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="member-info text-center">
-            <h4>Brian Doe</h4>
-            <span>Marketing</span>
-            <p>Qui consequuntur quos accusamus magnam quo est molestiae eius laboriosam sunt doloribus quia impedit laborum velit</p>
-          </div>
-        </div><!-- End Team Member -->
-
-        <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="600">
-          <div class="member-img">
-            <img src="{% static 'assets2/img/team/team-6.jpg' %}" class="img-fluid" alt="">
-            <div class="social">
-              <a href="#"><i class="bi bi-twitter"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-          <div class="member-info text-center">
-            <h4>Josepha Palas</h4>
-            <span>Operation</span>
-            <p>Sint sint eveniet explicabo amet consequatur nesciunt error enim rerum earum et omnis fugit eligendi cupiditate vel</p>
-          </div>
-        </div><!-- End Team Member -->
-
-      </div>
-
+        </div>
+        <div class="bttns mt-4 text-center">
+            <a href="page-about-5.html" class="btn btn-dark wow zoomIn">
+                <span>See All Team</span>
+            </a>
+            <a href="page-contact-5.html" class="btn butn-gard border-0 text-white wow zoomIn">
+                <span>Join Our Team</span>
+            </a>
+        </div>
     </div>
-
-  </section><!-- End Team Section -->
-
-
-
-
-
-
+    <img src="{% static 'assets/img/team/team_shap.png' %}" alt="" class="team_shap">
+</section>
+<!-- ====== end team ====== -->
 
 
 
@@ -838,51 +957,49 @@
     <section class="contact section-padding bg-gradient style-1"  data-scroll-index="7">
         <div class="container">
             <div class="section-head mb-60 text-center">
-                <h6 class="text-white text-uppercase wow fadeInUp">contact us</h6>
+                <h6 class="text-white text-uppercase wow fadeInUp">Contactez nous</h6>
                 <h2 class="wow fadeInUp text-white">
-                    Request Free <span class="fw-normal">Consultancy</span>
+                    Demande de conseil <span class="fw-normal">Gratuit</span>
                 </h2>
             </div>
             <div class="content">
                 <div class="row justify-content-center">
                     <div class="col-lg-5">
                         <div class="contact_info text-white">
-                            <p class="wow fadeInUp">Hotline 24/7</p>
-                            <h4 class="wow fadeInUp">(+23) 5535 68 68</h4>
+                            <p class="wow fadeInUp">Disponible 24/7</p>
+                            <h4 class="wow fadeInUp">(+229) 67 08 65 34</h4>
                             <ul>
                                 <li class="wow fadeInUp">
-                                    <strong>Address : </strong> 58 Howard Street,  San Francisco, CA 941
+                                    <strong>Addresse : </strong> 1360, Rue 12 052, Les cocotiers
                                 </li>
                                 <li class="wow fadeInUp">
-                                    <strong>Email : </strong> contact@Iteck.co
+                                    <strong>Email : </strong> mdekadjevi@dadigitall.com
                                 </li>
                                 <li class="wow fadeInUp">
-                                    <strong>Fax : </strong> fax@Iteck.co
-                                </li>
-                                <li class="wow fadeInUp">
-                                    <strong>Work Hour : </strong> Mon - Sat: 9:00 - 18:00
+                                    <strong>Heure de travail: </strong> Lun - Ven: 8:00 - 18:00
                                 </li>
                             </ul>
-                            <a href="#" class="wow fadeInUp">get direction</a>
+                            <a href="#" class="wow fadeInUp">Revenir à l'accueil</a>
                         </div>
                     </div>
                     <div class="col-lg-6 offset-lg-1">
-                        <form class="contact_form" action="contact.php" method="post"> 
+                        <form class="contact_form" method="post">
+                            {% csrf_token %}
                             <div class="row gx-3">
                                 <div class="col-lg-6">
                                     <div class="form-group mb-3 wow fadeInUp">
-                                        <input type="text" name="name" class="form-control" placeholder="name *">
+                                        <input type="text" name="name" class="form-control" placeholder="Nom et Prénoms*">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group mb-3 wow fadeInUp">
-                                        <input type="text" name="email" class="form-control" placeholder="Email Address *">
+                                        <input type="text" name="email" class="form-control" placeholder="Adresse Email *">
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="form-group mb-3 wow fadeInUp">
-                                        <select  name="option" class="form-select" aria-label="Default select example">
-                                            <option selected>Your inquiry about</option>
+                                        <select name="option" class="form-select" aria-label="Default select example">
+                                            <option selected>Entrer l'objet de votre demande</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
                                             <option value="3">Three</option>
@@ -891,23 +1008,25 @@
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="form-group mb-3 wow fadeInUp">
-                                        <textarea class="form-control" rows="4" placeholder="Write your inquiry here"></textarea>
+                                        <textarea class="form-control" name="message" rows="4" placeholder="Ecrivez votre demande ici"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="form-check mb-4 wow fadeInUp">
                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                         <label class="form-check-label text-light small" for="flexCheckDefault">
-                                            By submitting, i’m agreed to the <a href="#" class="text-decoration-underline">Terms & Conditons</a>
+                                         En soumettant j'agrée aux <a href="#" class="text-decoration-underline">Termes et Conditions</a>
                                         </label>
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
-                                    <input type="submit" value="Request Now" class="btn btn-dark wow fadeInUp text-light fs-14px">
+                                    <input type="submit" value="Soumettre maintenant" class="btn btn-dark wow fadeInUp text-light fs-14px">
                                 </div>
                             </div>
                         </form>
                     </div>
+
+
                 </div>
             </div>
         </div>
@@ -926,28 +1045,28 @@
                     <div class="col-lg-4">
                         <div class="foot_info">
                             <a href="#" class="logo mb-3">
-                                <img src="{% static 'assets/img/logo_cl.png' %}" alt="">
+                                <!-- <img src="{% static 'assets/img/DADIGITALL_logo2.png' %}" alt=""> -->
                             </a>
                             <div class="text mb-4">
-                                Best IT Solutions & Technology WordPress <br> Theme for Your Busines
+                                Référence en matière de transformation digitale <br>  et de conseils pour les entreprises du Bénin 
                             </div>
                             <ul class="mb-4">
                                 <li class="d-flex">
                                     <i class="bi bi-house me-3"></i>
                                     <a href="#">
-                                        <span>58 Howard St, San Francisco, CA 941</span>
+                                        <span>1360, Rue 12 052, Les cocotiers</span>
                                     </a>
                                 </li>
                                 <li class="d-flex">
                                     <i class="bi bi-envelope me-3"></i>
                                     <a href="#">
-                                        <span>contact@Iteck.co</span>
+                                        <span>mdekadjevi@dadigitall.com</span>
                                     </a>
                                 </li>
                                 <li class="d-flex">
                                     <i class="bi bi-phone me-3"></i>
                                     <a href="#">
-                                        <span>(+23) 5535 68 68</span>
+                                        <span>(+229) 67 08 65 34</span>
                                     </a>
                                 </li>
                             </ul>
@@ -975,26 +1094,18 @@
                                 </h6>
                                 <ul>
                                     <li>
-                                        <a href="#">IT Consultations </a>
+                                        <a href="#">Transformation digitale 360° </a>
                                     </li>
                                     <li>
-                                        <a href="#">Data Security </a>
+                                        <a href="#">Vente de matériels informatiques et réseau </a>
                                     </li>
                                     <li>
-                                        <a href="#">Website Development </a>
+                                        <a href="#">Audit, conseil et accompagnement</a>
                                     </li>
                                     <li>
-                                        <a href="#">UI/UX Design </a>
+                                        <a href="#">Assitant à maitrise d'ouvrage </a>
                                     </li>
-                                    <li>
-                                        <a href="#">Cloud Services </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Game Development </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">CRM & Software </a>
-                                    </li>
+                                    
                                 </ul>
                             </div>
                         </div>
@@ -1003,36 +1114,19 @@
                         <div class="links">
                             <div class="cont">
                                 <h6 class="link_title">
-                                    Information
+                                   Liens rapides
                                 </h6>
                                 <ul>
                                     <li>
-                                        <a href="#">About Iteck </a>
+                                        <a href="#">A propos </a>
                                     </li>
                                     <li>
-                                        <a href="#">Investors </a>
+                                        <a href="#">Notre équipe</a>
                                     </li>
                                     <li>
-                                        <a href="#">Blog </a>
+                                        <a href="#">Contactez nous</a>
                                     </li>
-                                    <li>
-                                        <a href="#">Career </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Contact </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Affiliate Program </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">How It Works </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Pricing Plan </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Covid-19 Update </a>
-                                    </li>
+                                    
                                 </ul>
                             </div>
                         </div>
@@ -1040,18 +1134,18 @@
                     <div class="col-lg-4">
                         <div class="foot_subscribe">
                             <h6 class="link_title">
-                                Newsletter
+                                Blog
                             </h6>
                             <p>
-                                Register now to get latest updates on  promotions & coupons. 
+                                Inscrivez-vous maintenant pour obtenir les dernières mises à jour sur les promotions et les coupons.
                             </p>
                             <div class="input-group my-4">
-                                <input type="text" class="form-control" placeholder="Enter your email" aria-label="Enter your email" aria-describedby="button-addon2">
+                                <input type="text" class="form-control" placeholder="Rntrer votre adresse email" aria-label="Enter your email" aria-describedby="button-addon2">
                                 <button class="btn butn-gard border-0 text-white px-3" type="button" id="button-addon2">
-                                    <span>Subscribe</span>
+                                    <span>Abonnez-vous</span>
                                 </button>
                             </div>
-                            <p class="fst-italic">By subscribing, you accepted the our <a href="#" class="text-decoration-underline"> Policy</a></p>
+                            <p class="fst-italic">En vous abonnant, vous avez accepté nos <a href="#" class="text-decoration-underline"> Politique</a></p>
                         </div>
                     </div>
                 </div>
@@ -1060,7 +1154,7 @@
                 <div class="col-lg-12">
                     <div class="foot">
                         <p>
-                            © 2022 Copyrights by <a href="#" class="text-white text-decoration-underline">Iteck Co.</a> All Rights Reserved by <a href="#" class="text-white text-decoration-underline"> ThemesCamp </a>
+                            © 2022 Copyrights by <a href="#" class="text-white text-decoration-underline">Da Digita All Co.</a> Tous droits réservés par <a href="#" class="text-white text-decoration-underline"> ThemesCamp </a>
                         </p>
                     </div>
                 </div>
