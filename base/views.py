@@ -6,10 +6,25 @@ from django.views.decorators.csrf import requires_csrf_token
 
 @requires_csrf_token
 # Create your views here.
-def home(request):
-    return render(request, 'home-digital-agency-onePage.html')
+# def home(request):
+#     return render(request, 'home-digital-agency-onePage.html')
 
 
+def home(request,):
+    
+    context={'scroll_nav': True}
+    return render(request, 'home.html', context)
+   
+
+
+def blog(request):
+    context = {}
+    return render(request, 'blog.html', context)
+
+
+def apropos(request):
+    context={'scroll_nav': False}
+    return render(request, 'apropos.html', context)
 
 
 def contact_view(request):

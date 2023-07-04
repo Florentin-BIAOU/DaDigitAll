@@ -1,0 +1,93 @@
+
+{% load static %}
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> -->
+    <!-- ====== start navbar ====== -->
+    <nav class="navbar navbar-expand-lg navbar-light style-1">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'home' %}" >
+                <!-- <img src="{%  static 'assets/img/logo_cd.png' %}" alt=""> -->
+                <img src="{%  static 'assets/img/DADIGITALL_logo.png' %}" alt="" height="100px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active" href="{% url 'home' %}#accueil" {% if scroll_nav %}data-scroll-nav="0"{% endif %}>
+                            Accueil
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active" href="{% url 'home' %}#apropos" {% if scroll_nav %}data-scroll-nav="1"{% endif %}>
+                            A Propos
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link"   href="{% url 'home' %}#services" {% if scroll_nav %}data-scroll-nav="2"{% endif %}>
+                            Nos Services
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"   href="{% url 'home' %}#pourquoi"  {% if scroll_nav %}data-scroll-nav="3"{% endif %}>
+                            Pourquoi nous
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"   href="{% url 'home' %}#porfolio"  {% if scroll_nav %}data-scroll-nav="4"{% endif %}>
+                            Portfolio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"   href="{% url 'home' %}#equipe"  {% if scroll_nav %}data-scroll-nav="5"{% endif %}>
+                            Notre Equipe
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"   href="{% url 'home' %}#blog"  {% if scroll_nav %}data-scroll-nav="6"{% endif %}>
+                            Blog
+                        </a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link"  data-scroll-nav="6">
+                            Contacts
+                        </a>
+                    </li> -->
+                    <li>
+                        
+                    </li>
+                    
+                </ul>
+                <div class="nav-side">
+                    <div class="hotline pe-4">
+                        <!-- <div class="icon me-3">
+                            <i class="bi bi-telephone"></i>
+                        </div> -->
+                        <!-- <div class="cont">
+                            <small class="text-muted m-0">hotline 24/7</small>
+                            <h6>(+23) 5535 68 68</h6>
+                        </div> -->
+                        
+                    </div>
+                    <div class="qoute-nav ps-4">
+                        <a href="#0" class="btn sm-butn butn-gard border-0 text-white" data-scroll-nav="7">
+                            <span>Contactez Nous</span>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+    <!-- ====== end navbar ====== -->
+<!-- </body>
+</html> -->
