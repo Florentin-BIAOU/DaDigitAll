@@ -133,6 +133,19 @@
     <header class="section-padding style-1" data-scroll-index="0" id="accueil">
         <div class="container">
             <div class="content">
+                {% if messages %}
+                            {% for message in messages %}
+                                <div class="alert alert-success" style="text-align: center;">
+                                    {{ message }}
+                                </div>
+                            {% endfor %}
+
+                            <script>
+                                setTimeout(function() {
+                                    document.querySelector('.alert').style.display = 'none';
+                                }, 10000);  // Hide the alert after 5 seconds (adjust the duration as needed)
+                            </script>
+                {% endif %}
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="info">
@@ -517,7 +530,7 @@
                             </li>
                         </ul>
 
-                        <a href="#" class="btn butn-gard border-0 text-white wow fadeInUp">
+                        <a href="#" class="btn  border-0 text-white wow fadeInUp" style="background-color: #211345;">
                             <span>En savoir plus sur nous</span>
                         </a>
                     </div>
@@ -1046,7 +1059,7 @@
                 </div>
             </div>
             <div style="text-align: center; margin-top:35px;">
-                <a href="#" class="btn butn-gard border-0 text-white wow fadeInUp" ">
+                <a href="{% url 'blog' %}" class="btn  border-0 text-white wow fadeInUp" style="background-color: #211345;" >
                     <span>Voir Plus</span>
                 </a>
             </div>
@@ -1057,7 +1070,7 @@
 
 
     <!-- ====== start contact ====== -->
-    <section class="contact section-padding bg-gradient style-1"  data-scroll-index="7">
+    <section class="contact section-padding  style-1"  data-scroll-index="7" style="background-color:#211345 ;">
         <div class="container">
             <div class="section-head mb-60 text-center">
                 <h6 class="text-white text-uppercase wow fadeInUp">Contactez-nous</h6>
@@ -1089,7 +1102,8 @@
                         </div>
                     </div>
                     <div class="col-lg-6 offset-lg-1">
-                        <form class="contact_form" action="contact.php" method="post"> 
+                        <form class="contact_form" action="" method="post"> 
+                            {% csrf_token %}
                             <div class="row gx-3">
                                 <div class="col-lg-6">
                                     <div class="form-group mb-3 wow fadeInUp">
@@ -1098,7 +1112,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group mb-3 wow fadeInUp">
-                                        <input type="text" name="email" class="form-control" placeholder="Email Address *">
+                                        <input type="email" name="email" class="form-control" placeholder="Email Address *">
                                     </div>
                                 </div>
                                 <!-- <div class="col-lg-12">
@@ -1113,7 +1127,7 @@
                                 </div> -->
                                 <div class="col-lg-12">
                                     <div class="form-group mb-3 wow fadeInUp">
-                                        <textarea class="form-control" rows="4" placeholder="Laissez votre message ici"></textarea>
+                                        <textarea class="form-control" name="message" rows="4" placeholder="Laissez votre message ici"></textarea>
                                     </div>
                                 </div>
                                 <!-- <div class="col-lg-12">
@@ -1129,6 +1143,7 @@
                                 </div>
                             </div>
                         </form>
+                        
                     </div>
                 </div>
             </div>
