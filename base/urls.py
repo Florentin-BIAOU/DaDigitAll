@@ -8,7 +8,8 @@ urlpatterns = [
     path('blog/', views.blog, name='blog'),
     path('apropos/', views.apropos, name='apropos'),
 
-    path('contact/', views.contact_view, name='contact'),
-    path('confirmation/', views.confirmation_view, name='confirmation'),
+    #path('contact/', views.contact_view, name='contact'),
+    path('blog/', views.blog, name='blog'),
+    #path('confirmation/', views.confirmation_view, name='confirmation'),
 ]
 
