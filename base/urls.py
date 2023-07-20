@@ -11,5 +11,7 @@ urlpatterns = [
     #path('contact/', views.contact_view, name='contact'),
     path('blog/', views.blog, name='blog'),
     #path('confirmation/', views.confirmation_view, name='confirmation'),
+    path('blog/<str:pk>/', views.blogdetail, name='blogdetail'),
 ]
-
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

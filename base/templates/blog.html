@@ -12,10 +12,10 @@
         <section class="blog-slider pt-50 pb-50 style-1">
             <div class="container">
                 <div class="section-head text-center mb-60 style-5">
-                    <h2 class="mb-20"> Our <span> Journal </span> </h2>
-                    <div class="text color-666">Get the latest articles from our journal, writing, discuss and share</div>
+                    <h2 class="mb-20"> Notre <span> blog </span> </h2>
+                    <div class="text color-666">Trouvez ici nos divers articles</div>
                 </div>
-                <div class="blog-details-slider">
+                <!-- <div class="blog-details-slider">
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -81,19 +81,19 @@
                         </div>
                     </div>
 
-                    <!-- ====== pagination ====== -->
+                   
                     <div class="swiper-pagination"></div>
-                    <!-- ====== arrows ====== -->
+                   
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
-                </div>
+                </div> -->
             </div>
         </section>
         <!-- ====== end blog-slider ====== -->
 
 
         <!-- ====== start Popular Posts ====== -->
-        <section class="popular-posts pt-50 pb-100 border-bottom brd-gray">
+        <!-- <section class="popular-posts pt-50 pb-100 border-bottom brd-gray">
             <div class="container">
                 <h5 class="post-sc-title text-center text-uppercase mb-70">Popular Posts</h5>
                 <div class="row gx-5">
@@ -207,7 +207,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- ====== end Popular Posts ====== -->
 
 
@@ -216,44 +216,48 @@
             <div class="container">
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-lg-8">
+                        {% for article in articles%}
                         <div class="card border-0 bg-transparent rounded-0 border-bottom brd-gray pb-30 mb-30">
                             <div class="row">
                                 <div class="col-lg-5">
                                     <div class="img img-cover">
-                                        <img src="assets/img/blog/6.png" class="radius-7" alt="...">
+                                        <img src="{{article.image.url}}" class="radius-7" alt="...">
                                     </div>
                                 </div>
                                 <div class="col-lg-7">
                                     <div class="card-body p-0">
                                         <small class="d-block date text">
-                                            <a href="#" class="text-uppercase border-end brd-gray pe-3 me-3 color-blue5 fw-bold"> news </a>
+                                            <a href="" class="text-uppercase border-end brd-gray pe-3 me-3 color-blue5 fw-bold"> {{article.category}} </a>
                                             <i class="bi bi-clock me-1"></i>
-                                            <a href="#" class="op-8">12 Days ago</a>
+                                            <a href="" class="op-8">{{article.created_at|date:"d-m-y H:i"}}</a>
                                         </small>
-                                        <a href="page-single-post-5.html" class="card-title mb-10">How To Become A Python Develop Expert</a>
-                                        <p class="fs-13px color-666">If there’s one way that wireless technology has changed the way we work, it’s that will everyone [...]</p>
+                                        <a href="{% url 'blogdetail' article.id %}" class="card-title mb-10">{{article.title}}</a>
+                                        <p class="fs-13px color-666">{{article.intro}}</p>
+                                        <p><a href="{% url 'blogdetail' article.id %}">Lire plus...</a></p>
                                         <div class="auther-comments d-flex small align-items-center justify-content-between op-9">
                                             <div class="l_side d-flex align-items-center">
                                                 <span
                                                     class="icon-10 rounded-circle d-inline-flex justify-content-center align-items-center text-uppercase bg-blue5 p-2 me-2 text-white">
-                                                    a
+                                                    {{article.author|slice:"1"}}
                                                 </span>
-                                                <a href="#">
-                                                    <small class="text-muted">By</small> Admin
+                                                <a href="">
+                                                    <small class="text-muted">By</small> {{article.author}}
                                                 </a>
                                             </div>
                                             <div class="r-side mt-1">
-                                                <i class="bi bi-chat-left-text me-1"></i>
-                                                <a href="#">24</a>
+                                                <!-- <i class="bi bi-chat-left-text me-1"></i>
+                                                <a href="">24</a>
                                                 <i class="bi bi-eye ms-4 me-1"></i>
-                                                <a href="#">774k</a>
+                                                <a href="">774k</a> -->
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card border-0 bg-transparent rounded-0 border-bottom brd-gray pb-30 mb-30">
+                        {% endfor %}
+
+                        <!-- <div class="card border-0 bg-transparent rounded-0 border-bottom brd-gray pb-30 mb-30">
                             <div class="row">
                                 <div class="col-lg-5">
                                     <div class="img img-cover">
@@ -479,9 +483,9 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
-                        <div class="pagination style-5 color-5 justify-content-center mt-60">
+                        <!-- <div class="pagination style-5 color-5 justify-content-center mt-60">
                             <a href="#" class="active">
                                 <span>1</span>
                             </a>
@@ -503,13 +507,13 @@
                             <a href="#">
                                 <span class="text">next <i class="fas fa-chevron-right"></i> </span>
                             </a>
-                        </div>
+                        </div> -->
                     </div>
 
                     <div class="col-lg-4">
                         <div class="side-blog style-5 ps-lg-5 mt-5 mt-lg-0">
 
-                            <form action="contact.php" class="search-form mb-50" method="post">
+                            <!-- <form action="contact.php" class="search-form mb-50" method="post">
                                 <h6 class="title mb-20 text-uppercase fw-normal">
                                     search
                                 </h6>
@@ -517,7 +521,7 @@
                                     <input type="text" class="form-control rounded-pill" placeholder="Type and hit enter">
                                     <button class="search-btn border-0 bg-transparent"> <i class="fas fa-search"></i> </button>
                                 </div>
-                            </form>
+                            </form> -->
 
                             <div class="side-recent-post mb-50">
                                 <h6 class="title mb-20 text-uppercase fw-normal">
@@ -599,7 +603,7 @@
                                 </a>
                             </div>
 
-                            <div class="side-newsletter mb-50">
+                            <!-- <div class="side-newsletter mb-50">
                                 <h6 class="title mb-10 text-uppercase fw-normal">
                                     newsletter
                                 </h6>
@@ -617,9 +621,9 @@
                                         <span>Subscribe</span>
                                     </button>
                                 </form>
-                            </div>
+                            </div> -->
 
-                            <div class="side-share mb-50">
+                            <!-- <div class="side-share mb-50">
                                 <h6 class="title mb-20 text-uppercase fw-normal">
                                     social
                                 </h6>
@@ -638,9 +642,9 @@
                                 <a href="#" class="social-icon">
                                     <i class="fab fa-linkedin-in"></i>
                                 </a>
-                            </div>
+                            </div> -->
 
-                            <div class="side-insta mb-50">
+                            <!-- <div class="side-insta mb-50">
                                 <h6 class="title mb-20 text-uppercase fw-normal">
                                     our instagram
                                 </h6>
@@ -670,9 +674,9 @@
                                         <i class="fab fa-instagram icon"></i>
                                     </a>
                                 </div>
-                            </div>
+                            </div> -->
 
-                            <div class="side-tags">
+                            <!-- <div class="side-tags">
                                 <h6 class="title mb-20 text-uppercase fw-normal">
                                     popular tags
                                 </h6>
@@ -688,7 +692,7 @@
                                     <a href="#">Envato</a>
                                     <a href="#">Psd</a>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
