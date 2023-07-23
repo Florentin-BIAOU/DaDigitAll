@@ -23,16 +23,22 @@ def home(request):
     context={'scroll_nav': True}
     return render(request, 'home.html', context)
    
-
-
 def blog(request):
-    context = {}
+    articles= Article.objects.all()
+    context = {'articles':articles}
     return render(request, 'blog.html', context)
+
+def blogdetail(request, pk):
+    article= Article.objects.get(pk=pk)
+    context = {'article':article}
+    return render(request, 'blogdetail.html', context)    
 
 
 def apropos(request):
     context={'scroll_nav': False}
     return render(request, 'apropos.html', context)
+
+
 
 
 
