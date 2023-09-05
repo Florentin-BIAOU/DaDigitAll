@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.core.mail import send_mail
 from django.conf import settings
 from django.contrib import messages
+from .models import Article
 
 # Create your views here.
 
@@ -12,7 +13,7 @@ def home(request):
         name=request.POST.get('name')
         email=request.POST.get('email')
         message=request.POST.get("message")
-        subject = f'Message de site DADIGITALL venant de {name} ({email})'
+        subject = f'Message depuis site web DADIGITALL venant de {name} ({email})'
         from_email = settings.EMAIL_HOST_USER
         recipient_list = ['hountondjisenek@gmail.com']
         print(name, email, message)
@@ -20,7 +21,9 @@ def home(request):
         messages.success(request, 'Votre message a été envoyé avec succes!')
         #return redirect('home')
     
-    context={'scroll_nav': True}
+    latest_articles = Article.objects.order_by('-created_at')[:4]
+    
+    context={'scroll_nav': True, 'latest_articles': latest_articles}
     return render(request, 'home.html', context)
    
 def blog(request):

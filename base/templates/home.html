@@ -173,7 +173,7 @@
                     </div>
                     <div class="col-lg-5 offset-lg-1">
                         <div class="img">
-                            <img src="{% static 'assets/img/header/head_img7.png' %}" alt="">
+                            <img src="{% static 'assets/img/header/head_img7.jpg' %}" alt="">
                         </div>
                     </div>
                 </div>
@@ -611,7 +611,7 @@
                                     </div>
                                     <div class="info">
                                         <h5>
-                                            <a href="page-single-project-5.html"> Keyla Shop </a> 
+                                            <a href="page-single-project-5.html"> Shop Digit </a> 
                                         </h5>
                                         <small class="d-block color-main text-uppercase"><a href="#">E-commerce</a></small>
                                         <div class="text">
@@ -915,33 +915,33 @@
                 <div class="blog_slider">
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
+                            {% for article in latest_articles %}
                             <div class="swiper-slide">
                                 <div class="blog_box">
                                     <div class="tags">
-                                        <a href="#">news</a>
+                                        <a href="">{{article.category}}</a>
                                     </div>
                                     <div class="img">
-                                        <img src="{% static 'assets/img/blog/1.jpeg' %}" alt="">
+                                        <img src="{{article.image.url}}" alt="">
                                     </div>
                                     <div class="info">
-                                        <h6><a href="page-single-post-5.html">Crypto Trends 2023</a></h6>
+                                        <h6><a href="{%  url 'blogdetail' article.id  %}">{{article.title}}</a></h6>
                                         <div class="auther">
                                             <span>
                                                 <img class="auther-img" src="{% static 'assets/img/testimonials/user1.jpeg' %}" alt="">
-                                                <small><a href="#">By Admin</a></small>
+                                                <small><a href="">Par {{article.author}}</a></small>
                                             </span>
                                             <span>
                                                 <i class="bi bi-calendar2"></i>
-                                                <small><a href="#">May 15, 2022</a></small>
+                                                <small><a href="#">{{article.created_at|date:"d-m-y H:i"}}</a></small>
                                             </span>
                                         </div>
-                                        <div class="text">
-                                            If there’s one way that wireless technology has changed the way we work, it’s that will everyone is now connected [...]
-                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
+                            {% endfor %}
+                            <!-- <div class="swiper-slide">
                                 <div class="blog_box">
                                     <div class="tags">
                                         <a href="#">technology</a>
@@ -1044,7 +1044,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <!-- ====== slider navigation ====== -->
